@@ -33,7 +33,9 @@ const handleUserInput = function(input) {
   if (input === "a") {
     connection.write("Move: left");
   }
-  
+  if (input === "i") {
+    connection.write("Say: Hello!");
+  }
 };
 
 setupInput();
